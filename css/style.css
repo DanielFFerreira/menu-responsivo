@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  padding: 0 1rem;
+  -webkit-box-shadow: 6px 11px 15px -4px rgba(0, 0, 0, 0.23);
+  -moz-box-shadow: 6px 11px 15px -4px rgba(0, 0, 0, 0.23);
+  box-shadow: 6px 11px 15px -4px rgba(0, 0, 0, 0.23);
+}
+
+.logo {
+  max-width: 50%;
+}
+.logo img {
+  max-width: 100%;
+}
+.profile-img img {
+  max-width: 100%;
+}
