@@ -1,8 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
+
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+/* Header */
 header {
   display: flex;
   align-items: center;
@@ -20,6 +30,65 @@ header {
 .logo img {
   max-width: 100%;
 }
+
+/* Menu profile */
+.menu {
+  width: 65%;
+  height: 100vh;
+  background-color: #222d32;
+  color: #fff;
+  position: absolute;
+}
+.profile-img {
+  display: block;
+  width: 60px;
+  padding-right: 1rem;
+}
 .profile-img img {
+  border-radius: 50%;
   max-width: 100%;
+}
+.profile {
+  display: flex;
+  align-items: center;
+  padding-top: 1rem;
+  padding-left: 1rem;
+}
+.status {
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+}
+.status::before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background-color: #96bb7c;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+/* Menu list */
+.link-nav {
+  color: #fff;
+  text-decoration: none;
+  padding: 1rem;
+  display: block;
+}
+.list-nav {
+  padding-top: 1rem;
+}
+.list-nav-second {
+  display: none;
+}
+
+.icon {
+  width: 1.5rem;
+}
+.link-nav-arrow::after {
+  content: '\f107';
+  font-weight: bold;
+  font-family: "Font Awesome 5 Free";
+  padding-left: 1.3rem;
 }
