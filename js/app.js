@@ -1,10 +1,29 @@
-let menuDoc = document.getElementsByClassName('link-nav-arrow')[0];
-let listSecond = document.querySelector('.list-nav-second');
-let teste = listSecond.classList;
+/**
+ * Menu Secundário
+ */
+const menuDoc = document.getElementsByClassName('link-nav-arrow')[0];
+const listSecond = document.querySelector('.list-nav-second');
+const teste = listSecond.classList;
 
-console.log(teste);
+menuDoc.addEventListener('click', function(){
 
-menuDoc.addEventListener('click', function() {
-  let teste = listSecond.classList.toggle('hide');
+  listSecond.classList.toggle('hide');
   menuDoc.classList.toggle('arrow');
+
+});
+
+/**
+ * Menu hamburguer
+ * Acionamento do menu
+ */
+
+const iconMenu = document.querySelector(".icon-menu");
+const menu = document.querySelector(".menu");
+const content = document.querySelector(".content");
+
+iconMenu.addEventListener("click", function(){
+
+  menu.classList.toggle('menu-move');
+  content.classList.toggle('content-move');
+
 });

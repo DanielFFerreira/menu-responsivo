@@ -10,6 +10,10 @@
 body {
   font-family: 'Source Sans Pro', sans-serif;
 }
+/* Container */
+.container {
+  overflow: hidden;
+}
 
 
 /* Header */
@@ -38,6 +42,7 @@ header {
   background-color: #222d32;
   color: #fff;
   position: absolute;
+  left: -65%;
 }
 .profile-img {
   display: block;
@@ -104,4 +109,18 @@ header {
   text-decoration: none;
   padding: 0 0 1rem 2.7rem;
   display: block;
+}
+
+/* Menu hamburguer */
+.menu-move {
+  left: 0;
+}
+
+/* Content */
+.content {
+  position: relative;
+  left: 0;
+}
+.content-move {
+  left: 65%;
 }
