@@ -18,12 +18,24 @@ menuDoc.addEventListener('click', function(){
  */
 
 const iconMenu = document.querySelector(".icon-menu");
-const menu = document.querySelector(".menu");
+// const menu = document.querySelector(".menu");
 const content = document.querySelector(".content");
+
+const body = document.querySelector("body");
 
 iconMenu.addEventListener("click", function(){
 
-  menu.classList.toggle('menu-move');
-  content.classList.toggle('content-move');
+  body.classList.toggle("move");
+  // menu.classList.toggle('menu-move');
+  // content.classList.toggle('content-move');
 
 });
+
+/**
+ * Recolhimento do menu clicando no content
+ */
+
+ content.addEventListener("click", function(){
+  body.classList.remove("move");
+ });
+

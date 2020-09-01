@@ -112,7 +112,7 @@ header {
 }
 
 /* Menu hamburguer */
-.menu-move {
+.move .menu {
   left: 0;
 }
 
@@ -120,7 +120,16 @@ header {
 .content {
   position: relative;
   left: 0;
+  height: 100vh;
 }
-.content-move {
+.move .content::before {
+  content: "";
+  background-color: #000;
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+}
+.move .content {
   left: 65%;
 }
